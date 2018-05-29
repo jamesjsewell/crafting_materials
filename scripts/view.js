@@ -21,8 +21,6 @@ class Page {
 
     add_nav_bar(){
 
-        console.log(this.category)
-
         page_wrapper.innerHTML =  `
 
             <div class="container">
@@ -91,11 +89,11 @@ class Page {
 
                 ${ this.pdfs? `<div class="row">
                     <div class="col">
-                     
+                        
                         <div class="alert alert-primary" role="alert">
                             <a href="${this.pdfs.link_href}" class="alert-link"> download</a> ${this.page_title} pdfs, these are hosted on google drive
                         </div>
-                         
+                            
                     </div>
                 </div>` : ''}           
 
@@ -217,3 +215,5 @@ class Page {
     }
 
 }
+
+
