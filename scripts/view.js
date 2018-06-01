@@ -4,7 +4,7 @@ class Page {
     constructor(category, pdfs, page_title) {
 
         this.category = category
-        this.posts_url = 'https://coding-resources-api.herokuapp.com/items/filter'
+        this.posts_url = 'https://crafting-materials.herokuapp.com/items/filter'
         this.page_title = page_title
 
         if(pdfs){
