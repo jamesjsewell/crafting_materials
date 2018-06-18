@@ -85,6 +85,7 @@ class Page {
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item ${this.category == 'backend_sql'? 'active' : '' }" href="#backend_sql">SQL</a>
+                                    <a class="dropdown-item ${this.category == 'backend_postgres'? 'active' : '' }" href="#backend_postgres">PostgreSQL</a>
                                 </div>
                             </li>
                         

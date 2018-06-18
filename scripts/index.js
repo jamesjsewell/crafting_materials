@@ -133,7 +133,8 @@ $(document).ready( function(){
 
         }
 
-        const BACKEND_SQL = 'backend_sql'
+        const BACKEND_SQL = 'backend_sql',
+        BACKEND_POSTGRES = 'backend_postgres'
 
         //backend
         switch(browser_location){
@@ -145,6 +146,12 @@ $(document).ready( function(){
 
                 break
 
+            case BACKEND_POSTGRES:
+
+                // var pdfs = {link_href: 'https://drive.google.com/open?id=1VV9DW6O7VuPOOgKtqc6crnDIlWXIFvgf', link_name: 'postgreSQL'}
+                var backend_postgres_page = new Page(BACKEND_POSTGRES, pdfs, 'PostgreSQL')
+
+                break
         }
     }
 
