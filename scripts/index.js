@@ -1,20 +1,13 @@
 $(document).ready( function(){
 
-    var HOME = 'home',
+    const HOME = 'home',
     TERMINAL = 'terminal',
     GIT = 'git',
     PYTHON = 'python',
     JAVASCRIPT = 'javascript',
     HTML = 'html',
     EDITORS = 'editors',
-    POSTS = 'posts',
-    CSS_GENERAL = 'css_general',
-    CSS_EFFECTS = 'css_effects',
-    CSS_ICONS = 'css_icons',
-    CSS_FONTS = 'css_fonts',
-    CSS_SVGS = 'css_svgs',
-    CSS_GRADIENTS = 'css_gradients',
-    CSS_FRAMEWORKS = 'css_frameworks'
+    POSTS = 'posts'
 
     location_has_changed()
 
@@ -85,6 +78,14 @@ $(document).ready( function(){
         
         }
 
+        const CSS_GENERAL = 'css_general',
+        CSS_EFFECTS = 'css_effects',
+        CSS_ICONS = 'css_icons',
+        CSS_FONTS = 'css_fonts',
+        CSS_SVGS = 'css_svgs',
+        CSS_GRADIENTS = 'css_gradients',
+        CSS_FRAMEWORKS = 'css_frameworks'
+
         //css
         switch(browser_location){
             
@@ -127,6 +128,20 @@ $(document).ready( function(){
             case CSS_FRAMEWORKS:
 
                 var css_frameworks_page = new Page(CSS_FRAMEWORKS, null, 'Frameworks')
+
+                break
+
+        }
+
+        const BACKEND_SQL = 'backend_sql'
+
+        //backend
+        switch(browser_location){
+            
+            case BACKEND_SQL:
+
+                var pdfs = {link_href: 'https://drive.google.com/open?id=1VV9DW6O7VuPOOgKtqc6crnDIlWXIFvgf', link_name: 'SQL'}
+                var backend_sql_page = new Page(BACKEND_SQL, pdfs, 'SQL')
 
                 break
 
