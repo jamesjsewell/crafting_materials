@@ -7,7 +7,8 @@ $(document).ready( function(){
     JAVASCRIPT = 'javascript',
     HTML = 'html',
     EDITORS = 'editors',
-    POSTS = 'posts'
+    POSTS = 'posts',
+    BACKEND_MONGODB = 'mongodb'
 
     location_has_changed()
 
@@ -149,9 +150,17 @@ $(document).ready( function(){
             case BACKEND_POSTGRES:
 
                 // var pdfs = {link_href: 'https://drive.google.com/open?id=1VV9DW6O7VuPOOgKtqc6crnDIlWXIFvgf', link_name: 'postgreSQL'}
-                var backend_postgres_page = new Page(BACKEND_POSTGRES, pdfs, 'PostgreSQL')
+                var backend_postgres_page = new Page(BACKEND_POSTGRES, null, 'PostgreSQL')
 
                 break
+
+            case BACKEND_MONGODB:
+
+                // var pdfs = {link_href: 'https://drive.google.com/open?id=1VV9DW6O7VuPOOgKtqc6crnDIlWXIFvgf', link_name: 'postgreSQL'}
+                var backend_mongodb_page = new Page(BACKEND_MONGODB, null, 'Mongodb')
+
+                break
+
         }
     }
 
