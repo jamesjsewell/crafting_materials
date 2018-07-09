@@ -7,8 +7,7 @@ $(document).ready( function(){
     JAVASCRIPT = 'javascript',
     HTML = 'html',
     EDITORS = 'editors',
-    POSTS = 'posts',
-    BACKEND_MONGODB = 'mongodb'
+    POSTS = 'posts'
 
     location_has_changed()
 
@@ -135,7 +134,8 @@ $(document).ready( function(){
         }
 
         const BACKEND_SQL = 'backend_sql',
-        BACKEND_POSTGRES = 'backend_postgres'
+        BACKEND_POSTGRES = 'backend_postgres',
+        BACKEND_MONGODB = 'backend_mongodb'
 
         //backend
         switch(browser_location){
